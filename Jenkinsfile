@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           echo "this is build stage" 
+           echo "this is build stage from main" 
         }
      }
      
