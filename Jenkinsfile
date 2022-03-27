@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh "echo "this is from daev" 
+           sh echo "this is from daev" 
         }
      }
      
