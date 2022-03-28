@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh 'echo "this is from dev"' 
+           sh 'echo "this is from dev branch"' 
         }
      }
      
