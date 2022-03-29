@@ -22,6 +22,16 @@ pipeline {
          }
 
      }
+     stage("push artifacts to s3") {
+     steps {
+           withCredentials([<object of type com.cloudbees.jenkins.plugins.awscredentials.AmazonWebServicesCredentialsBinding>]) {
+    // some block
+             
+           sh 'aws s3 cp /var/jenkins_home/workspace/multibranch_dev/*.js s3://my-bucket-test3-apsouth'
+              }   
+         }
+      }
+       
   
    	}
 
