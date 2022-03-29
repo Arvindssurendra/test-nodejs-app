@@ -24,7 +24,7 @@ pipeline {
      }
      stage("push artifacts to s3") {
      steps {  
-           sh 'aws s3 cp /var/jenkins_home/workspace/* s3://"my-bucket-test3-apsouth"'
+           sh 'aws s3 cp /var/jenkins_home/workspace/*. s3://"my-bucket-test3-apsouth"'
               }   
          }
      }
